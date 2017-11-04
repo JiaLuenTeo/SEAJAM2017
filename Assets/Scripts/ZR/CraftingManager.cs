@@ -15,7 +15,11 @@ public class CraftingManager : MonoBehaviour
 	//Will be attach to each individual obj and each has their own material
 	public List<CraftingMaterial_Properties> m_MaterialList;
 
+	public GameObject stockManagerSystemOBJ;
+
 	public string ProductName; // crafted product
+	public int ProductValue = 1;
+	public float ProductLiquidity = 1.0f; // how many secs it will sold out
 	public int CraftedAmount = 1;
 
 	public bool Allowcrafting()
@@ -47,11 +51,35 @@ public class CraftingManager : MonoBehaviour
 	{
 		if (Allowcrafting ()) 
 		{
-			PlayerPrefs.SetInt (ProductName+"_Prod", CraftedAmount);
+			PlayerPrefs.SetInt (ProductName+"_ProdAmount", CraftedAmount);
+			GameObject theProduct = GameObject.Find (ProductName);
+
+			if ( theProduct!= null) 
+			{ 
+				Debug.Log (ProductName + " Existed!");
+				theProduct.GetComponent<StockManagerSystem> ().CurrentAmount += CraftedAmount; // just add in amount
+			} 
+			else 
+			{
+				GameObject CraftedFood = Instantiate (stockManagerSystemOBJ);
+
+				CraftedFood.name = ProductName;
+				CraftedFood.GetComponent<StockManagerSystem> ().mLiquidityTimer = ProductLiquidity;
+				CraftedFood.GetComponent<StockManagerSystem> ().ValueEarned_OverTime = ProductValue;
+
+				CraftedFood.GetComponent<StockManagerSystem> ().CurrentAmount += CraftedAmount;
+				CraftedFood.GetComponent<StockManagerSystem> ().StartCountDown = true;
+				theProduct = CraftedFood;
+			}
+
+			//TODO: Add data to UI DISPLAY AS WELL
+
+
 		}
 	}
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		
 	}
 	
@@ -61,6 +89,7 @@ public class CraftingManager : MonoBehaviour
 		#if UNITY_EDITOR
 		if(Input.GetKeyDown(KeyCode.F4))
 		{
+			Debug.Log("ALL KEYS RESET");
 			PlayerPrefs.DeleteAll();
 		}
 		#endif
