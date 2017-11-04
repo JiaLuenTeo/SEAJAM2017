@@ -37,8 +37,9 @@ public class GameManagerScript : MonoBehaviour {
 	int matA,matB,matC;
 
 	// Use this for initialization
-	void Start () {
-		
+	void Start () 
+	{
+		PlayerPrefs.SetInt("Cash", (int)moneyAmount);
 	}
 	
 	// Update is called once per frame
@@ -80,10 +81,10 @@ public class GameManagerScript : MonoBehaviour {
 
 	void ChangeText()
 	{
-		money.text = "RM " + moneyAmount;
-		MaterialA.text = "Material A : " + matA;
-		MaterialB.text = "Material B : " + matB;
-		MaterialC.text = "Material C : " + matC;
+		money.text = "RM " + PlayerPrefs.GetInt("Cash");
+//		MaterialA.text = "Material A : " + matA;
+//		MaterialB.text = "Material B : " + matB;
+//		MaterialC.text = "Material C : " + matC;
 	}
 
 

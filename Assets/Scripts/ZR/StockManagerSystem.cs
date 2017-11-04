@@ -68,5 +68,6 @@ public class StockManagerSystem : MonoBehaviour {
 	{
 		if (StartCountDown)
 			ProductSoldOverTime ();
+		//updateBar();
 	}
 }
