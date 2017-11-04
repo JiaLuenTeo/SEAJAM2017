@@ -21,10 +21,12 @@ public class ResourceGeneratorSystem : MonoBehaviour {
 	void ProvideResources()
 	{
 		int randSeed=0;
+		int randAmount = 0;
 		if (currCounter <= 0)
 		{
 			randSeed = Random.Range (0, ResourceNames.Count);
-			PlayerPrefs.SetInt (ResourceNames[randSeed] + "_CM", PlayerPrefs.GetInt (ResourceNames[randSeed]  + "_CM") + Random.Range(1,MaxResourceReward));
+			randAmount = Random.Range (1, MaxResourceReward);
+			PlayerPrefs.SetInt (ResourceNames[randSeed] + "_CM", PlayerPrefs.GetInt (ResourceNames[randSeed]  + "_CM") + Random.Range(1,MaxResourceReward) + randAmount);
 			currCounter = MaxCounter;
 		}
 	}
