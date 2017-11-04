@@ -1,10 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
-
-
-
 
 public class StockManagerSystem : MonoBehaviour {
 
@@ -15,6 +13,8 @@ public class StockManagerSystem : MonoBehaviour {
 	public float mLiquidityTimer;
 	private float currentTimer = 0f;
 	public int ValueEarned_OverTime;
+	public float maxBarAmount = 20;
+	public Image stockAmount;
 
 	public int CurrentAmount = 0; // use addition instead of assign
 
@@ -43,6 +43,18 @@ public class StockManagerSystem : MonoBehaviour {
 //			}
 		}
 
+	}
+
+	void updateBar()
+	{
+		if (CurrentAmount >= maxBarAmount)
+		{
+			stockAmount.rectTransform.localScale = new Vector3 (1,1,1);
+		}
+		else if (CurrentAmount < maxBarAmount)
+		{
+			stockAmount.rectTransform.localScale = new Vector3( (CurrentAmount/maxBarAmount),1,1);
+		}
 	}
 
 
