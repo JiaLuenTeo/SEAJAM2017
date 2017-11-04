@@ -21,9 +21,10 @@ public class CraftingManager : MonoBehaviour
 	public bool Allowcrafting()
 	{
 		int counter = 0;
-		foreach (string materials in m_MaterialList) 
+		foreach (CraftingMaterial_Properties materials in m_MaterialList) 
 		{
-			if (PlayerPrefs.GetInt (materials + "_CM") > 0) 
+			
+			if (PlayerPrefs.GetInt (materials.Name + "_CM") > 0) 
 			{
 				counter += 1;
 			}
