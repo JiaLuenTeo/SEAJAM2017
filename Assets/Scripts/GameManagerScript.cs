@@ -29,8 +29,10 @@ public class GameManagerScript : MonoBehaviour {
 	}
 
 	public Text MaterialA, MaterialB, MaterialC;
+	public Text money;
 	public float timeToSpawn;
 
+	float moneyAmount = 1000;
 	float spawnTime;
 	int matA,matB,matC;
 
@@ -42,7 +44,7 @@ public class GameManagerScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		InitiateSpawn();
+		//InitiateSpawn();
 		ChangeText();
 	}
 
@@ -60,7 +62,6 @@ public class GameManagerScript : MonoBehaviour {
 
 	void spawnMat()
 	{
-		Debug.Log("Running");
 		int randNum = Random.Range(1,4);
 
 		if (randNum == 1)
@@ -79,6 +80,7 @@ public class GameManagerScript : MonoBehaviour {
 
 	void ChangeText()
 	{
+		money.text = "RM " + moneyAmount;
 		MaterialA.text = "Material A : " + matA;
 		MaterialB.text = "Material B : " + matB;
 		MaterialC.text = "Material C : " + matC;
