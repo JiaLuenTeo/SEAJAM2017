@@ -46,7 +46,7 @@ public class CraftingManager : MonoBehaviour
 	{
 		if (Allowcrafting ()) 
 		{
-			PlayerPrefs.SetInt (ProductName, CraftedAmount);
+			PlayerPrefs.SetInt (ProductName+"_Prod", CraftedAmount);
 		}
 	}
 	// Use this for initialization
@@ -55,7 +55,13 @@ public class CraftingManager : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update () 
+	{
+		#if UNITY_EDITOR
+		if(Input.GetKeyDown(KeyCode.F4))
+		{
+			PlayerPrefs.DeleteAll();
+		}
+		#endif
 	}
 }
