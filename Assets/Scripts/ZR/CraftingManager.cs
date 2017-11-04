@@ -73,6 +73,7 @@ public class CraftingManager : MonoBehaviour
 			}
 
 			//TODO: Add data to UI DISPLAY AS WELL
+			//TODO: Add UNLOCK SYSTEM
 
 
 		}
