@@ -665,6 +665,7 @@ RectTransform:
   - {fileID: 1690988539}
   - {fileID: 1008940365}
   - {fileID: 142389056}
+  - {fileID: 1569679677}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -809,7 +810,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material_Name: NanoSpor
   MaterialPrice: 3
+  MaterialAmount: 0
   AmountBundle: 1
+  maxBarAmount: 20
+  mEnable: {fileID: 0}
+  mDisable: {fileID: 0}
+  BuyButton: {fileID: 0}
 --- !u!1 &1472711792
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,6 +892,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1472711792}
+--- !u!224 &1569679677 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+    type: 2}
+  m_PrefabInternal: {fileID: 1954220656}
 --- !u!1 &1612222217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,10 +1036,15 @@ MonoBehaviour:
     AmountRequired: 3
   stockManagerSystemOBJ: {fileID: 1682248774859026, guid: cad64c8a5e293ec42a13769082de505b,
     type: 2}
+  BarMeter: {fileID: 0}
+  craftText: {fileID: 0}
   ProductName: RendangPrime
   ProductValue: 1
   ProductLiquidity: 5
   CraftedAmount: 10
+  Disabled: {fileID: 0}
+  Enabled: {fileID: 0}
+  CraftButton: {fileID: 0}
 --- !u!1 &1690988538
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,7 +1181,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material_Name: Ferrite
   MaterialPrice: 1
+  MaterialAmount: 0
   AmountBundle: 5
+  maxBarAmount: 20
+  mEnable: {fileID: 0}
+  mDisable: {fileID: 0}
+  BuyButton: {fileID: 0}
 --- !u!1 &1918074271
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,6 +1263,106 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1918074271}
+--- !u!1001 &1954220656
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 781470559}
+    m_Modifications:
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ad1740ca15981384eb9ab828bc23ec84, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &2114690321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,7 +1504,12 @@ MonoBehaviour:
     AmountRequired: 1
   stockManagerSystemOBJ: {fileID: 1682248774859026, guid: cad64c8a5e293ec42a13769082de505b,
     type: 2}
+  BarMeter: {fileID: 0}
+  craftText: {fileID: 0}
   ProductName: NasiBraton
   ProductValue: 3
   ProductLiquidity: 3
   CraftedAmount: 1
+  Disabled: {fileID: 0}
+  Enabled: {fileID: 0}
+  CraftButton: {fileID: 0}
