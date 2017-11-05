@@ -11472,6 +11472,9 @@ MonoBehaviour:
   recipeGO: {fileID: 2113764125}
   ingredientGO: {fileID: 1015847605}
   upgradeGO: {fileID: 1136135603}
+  recipeTOP: {fileID: 1073137298}
+  ingredientTOP: {fileID: 228350535}
+  upgradeTOP: {fileID: 1607320581}
 --- !u!1 &1497771830
 GameObject:
   m_ObjectHideFlags: 0
