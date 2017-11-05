@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d8326bf7d69f4d64cbb845a54f5db94e
-timeCreated: 1509858441
+timeCreated: 1509865689
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -105,10 +105,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 240
-        height: 400
+        width: 960
+        height: 1600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -117,12 +117,12 @@ TextureImporter:
       name: UIsprites_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 356
-        width: 218
-        height: 44
+        x: 1024
+        y: 1424
+        width: 872
+        height: 176
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,13 +131,13 @@ TextureImporter:
       name: UIsprites_2
       rect:
         serializedVersion: 2
-        x: 272
-        y: 293
-        width: 55
-        height: 44
+        x: 1088
+        y: 1172
+        width: 220
+        height: 176
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 84, y: 0, z: 79, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -145,12 +145,12 @@ TextureImporter:
       name: UIsprites_3
       rect:
         serializedVersion: 2
-        x: 272
-        y: 273
-        width: 36
-        height: 16
+        x: 1088
+        y: 1092
+        width: 144
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -159,12 +159,12 @@ TextureImporter:
       name: UIsprites_4
       rect:
         serializedVersion: 2
-        x: 310
-        y: 273
-        width: 36
-        height: 16
+        x: 1240
+        y: 1092
+        width: 144
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,12 +173,12 @@ TextureImporter:
       name: UIsprites_5
       rect:
         serializedVersion: 2
-        x: 272
-        y: 233
-        width: 35
-        height: 24
+        x: 1088
+        y: 932
+        width: 140
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,12 +187,12 @@ TextureImporter:
       name: UIsprites_6
       rect:
         serializedVersion: 2
-        x: 309
-        y: 233
-        width: 35
-        height: 24
+        x: 1236
+        y: 932
+        width: 140
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -201,12 +201,12 @@ TextureImporter:
       name: UIsprites_7
       rect:
         serializedVersion: 2
-        x: 272
-        y: 208
-        width: 69
-        height: 14
+        x: 1088
+        y: 832
+        width: 276
+        height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,12 +215,12 @@ TextureImporter:
       name: UIsprites_8
       rect:
         serializedVersion: 2
-        x: 256
-        y: 9
-        width: 222
-        height: 181
+        x: 1024
+        y: 36
+        width: 888
+        height: 724
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

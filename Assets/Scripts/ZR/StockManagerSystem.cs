@@ -62,7 +62,7 @@ public class StockManagerSystem : MonoBehaviour {
 	{
 		if(CurrentAmount == 0)
 		{
-			curAmount.text = "Craft";
+			curAmount.text = "BUY";
 		}
 		else if (CurrentAmount > 0)
 		{

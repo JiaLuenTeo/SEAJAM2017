@@ -87,12 +87,12 @@ public class ResourceGeneratorSystem : MonoBehaviour {
 	{
 		if (PlayerPrefs.GetInt("Machine_Tier") < mMachineTier.Count - 1)
 		{
-			buttonTxt.text = "Machine Stall" + "\n" + "Tier Level : " + PlayerPrefs.GetInt("Machine_Tier");
+			buttonTxt.text = "Material Generator" + "\n" + "Tier Level : " + PlayerPrefs.GetInt("Machine_Tier");
 		}
 		else if (PlayerPrefs.GetInt("Machine_Tier") == mMachineTier.Count - 1)
 		{
 
-			buttonTxt.text = "Machine Stall" + "\n" + "Tier Level : " + "MAX";
+			buttonTxt.text = "Material Generator" + "\n" + "Tier Level : " + "MAX";
 		}
 	}
 	// Use this for initialization

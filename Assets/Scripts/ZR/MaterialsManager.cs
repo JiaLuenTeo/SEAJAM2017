@@ -17,6 +17,10 @@ public class MaterialsManager : MonoBehaviour
 	RectTransform matBar;
 	Text matName, matPrice, matAmount;
 
+	public Sprite mEnable;
+	public Sprite mDisable;
+	public GameObject BuyButton;
+
 	//set in game obj button
 	public void PurchaseMaterial()
 	{
@@ -52,7 +56,7 @@ public class MaterialsManager : MonoBehaviour
 
 		if (MaterialAmount <= 0)
 		{
-			matAmount.text = "Craft" ;
+			matAmount.text = "BUY" ;
 		}
 		else if (MaterialAmount > 0)
 		{
@@ -75,6 +79,14 @@ public class MaterialsManager : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+		if (PlayerPrefs.GetInt ("Cash") < MaterialPrice) 
+		{
+			BuyButton.GetComponent<Image> ().sprite = mDisable;
+		} 
+		else 
+		{
+			BuyButton.GetComponent<Image> ().sprite = mEnable;
+		}
 		updateNumber();
 		updateBar();
 	}

@@ -104,10 +104,29 @@ public class CraftingManager : MonoBehaviour
 		}
 
 	}
-	
+
+	public Sprite Disabled;
+	public Sprite Enabled;
+	public GameObject CraftButton;
+
 	// Update is called once per frame
 	void Update () 
 	{
+		foreach (CraftingMaterial_Properties materials in m_MaterialList) 
+		{
+
+			if (PlayerPrefs.GetInt (materials.Name + "_CM") <= 0) {
+				CraftButton.transform.GetChild (0).GetComponent<Text> ().text = "LOCKED!";
+				CraftButton.GetComponent<Image> ().sprite = Disabled;
+			} 
+			else
+			{
+				CraftButton.transform.GetChild (0).GetComponent<Text> ().text = "CRAFT!";
+				CraftButton.GetComponent<Image> ().sprite = Enabled;
+			}
+		}
+
+
 		#if UNITY_EDITOR
 		if(Input.GetKeyDown(KeyCode.F4))
 		{

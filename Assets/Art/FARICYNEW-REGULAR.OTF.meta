@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: b37419f626a69df44af77a1a5b6205ba
+timeCreated: 1509868097
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: FaricyNew-Regular
+  fontNames:
+  - FaricyNew-Regular
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
