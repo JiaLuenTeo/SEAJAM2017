@@ -19,10 +19,10 @@ public class MachineTier{
 public class ResourceGeneratorSystem : MonoBehaviour {
 
 	public List<MachineTier> mMachineTier;
-
+	public Image barProgress;
 
 	private float CurrTime = 0f;
-	private int currCounter = 0; // no. of counters to spawn resource.
+	private float currCounter = 0; // no. of counters to spawn resource.
 
 	Text buttonTxt;
 
@@ -95,10 +95,24 @@ public class ResourceGeneratorSystem : MonoBehaviour {
 			buttonTxt.text = "Material Generator" + "\n" + "Tier Level : " + "MAX";
 		}
 	}
+
+	void UpdateBar()
+	{
+		float tempFloat =  mMachineTier[PlayerPrefs.GetInt("Machine_Tier")].MaxCounter;
+		Debug.Log(1 - (currCounter / tempFloat));
+		if (1 - (currCounter / tempFloat) >= 1)
+		{
+			barProgress.rectTransform.localScale = new Vector3 (1,1,1);
+		}
+		else if (1 - (currCounter / tempFloat) <= 1)
+		{
+			barProgress.rectTransform.localScale = new Vector3 (1 - (currCounter / tempFloat) ,1,1);
+		}
+
+	}
 	// Use this for initialization
 	void Start () 
 	{
-		Debug.Log (PlayerPrefs.GetInt("Machine_Tier") + "=" +  mMachineTier.Count);
 		buttonTxt = gameObject.transform.Find("UpgradeMachine").Find("Text").GetComponent<Text>();
 		currCounter = mMachineTier[PlayerPrefs.GetInt ("Machine_Tier") ].MaxCounter;
 	}
@@ -107,6 +121,7 @@ public class ResourceGeneratorSystem : MonoBehaviour {
 	void Update () 
 	{
 		ChangeText();
+		UpdateBar();
 		CurrTime += Time.deltaTime;
 		if (CurrTime >= mMachineTier[PlayerPrefs.GetInt ("Machine_Tier") ].TimeRequiredToCharge_Auto)
 		{
