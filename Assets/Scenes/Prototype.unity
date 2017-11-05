@@ -6511,7 +6511,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 460860953}
   m_Direction: 2
   m_Value: 1
-  m_Size: 1
+  m_Size: 0.9999998
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7539,6 +7539,11 @@ MonoBehaviour:
     - {fileID: 477220749}
     - {fileID: 2004950069}
   - Recipes:
+    - {fileID: 1311333012}
+  - Recipes:
+    - {fileID: 1311333012}
+    - {fileID: 1311333012}
+    - {fileID: 1311333012}
     - {fileID: 1311333012}
 --- !u!114 &1136135607
 MonoBehaviour:
@@ -8767,7 +8772,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 848908396}
   m_Direction: 2
   m_Value: 1
-  m_Size: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

@@ -65,11 +65,11 @@ public class StallUpgradeManager : MonoBehaviour {
 
 	void ChangeText()
 	{
-		if (PlayerPrefs.GetInt("Stall_Tier") < stallTier.Count )
+		if (PlayerPrefs.GetInt("Stall_Tier") < stallTier.Count-1 )
 		{
 			buttonTxt.text = "Upgrade Stall" + "\n" + "Tier Level : " + PlayerPrefs.GetInt("Stall_Tier");
 		}
-		else if (PlayerPrefs.GetInt("Stall_Tier") == stallTier.Count)
+		else if (PlayerPrefs.GetInt("Stall_Tier") == stallTier.Count-1)
 		{
 			
 			buttonTxt.text = "Upgrade Stall" + "\n" + "Tier Level : " + "MAX";
