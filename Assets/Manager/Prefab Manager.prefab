@@ -53,3 +53,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManagerPrefab: {fileID: 1023568645875722, guid: 48daf842cfa98694faaa369cbcd316ab,
     type: 2}
+  soundManagerPrefab: {fileID: 0}

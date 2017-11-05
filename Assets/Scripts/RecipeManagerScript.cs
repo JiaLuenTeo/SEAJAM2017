@@ -24,28 +24,28 @@ using UnityEngine;
 
 public class RecipeManagerScript : MonoBehaviour {
 
-	private static RecipeManagerScript mInstance = null;
-
-	public static RecipeManagerScript Instance
-	{
-		get
-		{
-			// Singleton Implementation
-			if(mInstance == null)
-			{
-				GameObject tempObject = GameObject.FindWithTag("RecipeManager");
-
-				if(tempObject == null)
-				{
-					tempObject = Instantiate(PrefabManagerScript.Instance.recipeManagerPrefab, Vector3.zero, Quaternion.identity);
-				}
-
-				mInstance = tempObject.GetComponent<RecipeManagerScript>();
-			}
-
-			return mInstance;
-		}
-	}
+//	private static RecipeManagerScript mInstance = null;
+//
+//	public static RecipeManagerScript Instance
+//	{
+//		get
+//		{
+//			// Singleton Implementation
+//			if(mInstance == null)
+//			{
+//				GameObject tempObject = GameObject.FindWithTag("RecipeManager");
+//
+//				if(tempObject == null)
+//				{
+//					tempObject = Instantiate(PrefabManagerScript.Instance.recipeManagerPrefab, Vector3.zero, Quaternion.identity);
+//				}
+//
+//				mInstance = tempObject.GetComponent<RecipeManagerScript>();
+//			}
+//
+//			return mInstance;
+//		}
+//	}
 
 	// Use this for initialization
 	void Start () {

@@ -30,5 +30,5 @@ public class PrefabManagerScript : MonoBehaviour {
 	}
 
 	public GameObject gameManagerPrefab;
-	public GameObject recipeManagerPrefab;
+	public GameObject soundManagerPrefab;
 }
