@@ -18,6 +18,7 @@ public class CraftingManager : MonoBehaviour
 
 	public GameObject stockManagerSystemOBJ;
 	public Image BarMeter;
+	public Text craftText;
 
 	public string ProductName; // crafted product
 	public int ProductValue = 1;
@@ -74,6 +75,7 @@ public class CraftingManager : MonoBehaviour
 				CraftedFood.GetComponent<StockManagerSystem> ().CurrentAmount += CraftedAmount;
 				CraftedFood.GetComponent<StockManagerSystem> ().StartCountDown = true;
 				CraftedFood.GetComponent<StockManagerSystem> ().stockAmount = BarMeter;
+				CraftedFood.GetComponent<StockManagerSystem> ().curAmount = craftText;
 				theProduct = CraftedFood;
 			}
 
@@ -89,6 +91,7 @@ public class CraftingManager : MonoBehaviour
 		proName = gameObject.transform.Find("RecipeName").GetComponent<Text>();
 		proValue = gameObject.transform.Find("SellingPrice").GetComponent<Text>();
 
+		craftText.text = "Craft";
 		proName.text = ProductName;
 		proValue.text = "RM " + ProductValue.ToString();
 		for (int i = 0; i < m_MaterialList.Count;i++)

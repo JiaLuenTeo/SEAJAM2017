@@ -15,6 +15,7 @@ public class StockManagerSystem : MonoBehaviour {
 	public int ValueEarned_OverTime;
 	public float maxBarAmount = 20;
 	public Image stockAmount;
+	public Text curAmount;
 
 	public int CurrentAmount = 0; // use addition instead of assign
 
@@ -57,6 +58,17 @@ public class StockManagerSystem : MonoBehaviour {
 		}
 	}
 
+	void updateText()
+	{
+		if(CurrentAmount == 0)
+		{
+			curAmount.text = "Craft";
+		}
+		else if (CurrentAmount > 0)
+		{
+			curAmount.text = CurrentAmount.ToString();
+		}
+	}
 
 	// Use this for initialization
 	void Start () {
@@ -69,6 +81,7 @@ public class StockManagerSystem : MonoBehaviour {
 		
 		if (StartCountDown) 
 		{
+			updateText();
 			updateBar();
 			ProductSoldOverTime ();
 		}
