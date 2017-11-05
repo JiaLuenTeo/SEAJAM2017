@@ -66,8 +66,13 @@ public class StockManagerSystem : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (StartCountDown)
+		
+		if (StartCountDown) 
+		{
+			updateBar();
 			ProductSoldOverTime ();
-		//updateBar();
+		}
+			
+		
 	}
 }

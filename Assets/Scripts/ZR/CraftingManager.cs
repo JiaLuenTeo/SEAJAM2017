@@ -17,6 +17,7 @@ public class CraftingManager : MonoBehaviour
 	public List<CraftingMaterial_Properties> m_MaterialList;
 
 	public GameObject stockManagerSystemOBJ;
+	public Image BarMeter;
 
 	public string ProductName; // crafted product
 	public int ProductValue = 1;
@@ -72,6 +73,7 @@ public class CraftingManager : MonoBehaviour
 
 				CraftedFood.GetComponent<StockManagerSystem> ().CurrentAmount += CraftedAmount;
 				CraftedFood.GetComponent<StockManagerSystem> ().StartCountDown = true;
+				CraftedFood.GetComponent<StockManagerSystem> ().stockAmount = BarMeter;
 				theProduct = CraftedFood;
 			}
 
