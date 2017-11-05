@@ -31,7 +31,7 @@ public class SoundManagerScript : MonoBehaviour{
 	public AudioSource BGM;
 	public AudioSource coinSFX, buttonSFX;
 
-//	bool played = false;
+	string currentActive;
 
 	// Use this for initialization
 	void Start () 
@@ -42,7 +42,11 @@ public class SoundManagerScript : MonoBehaviour{
 	// Update is called once per frame
 	void Update () 
 	{
-		
+		if (!buttonSFX.isPlaying)
+		{
+			playButton();
+		}
+
 	}
 
 	public void playCoin()
@@ -50,11 +54,12 @@ public class SoundManagerScript : MonoBehaviour{
 		coinSFX.Play();
 	}
 
-//	public void playButton()
-//	{
-//		if(EventSystem.current.currentSelectedGameObject)
-//		{
-//			buttonSFX.Play();
-//		}
-//	}
+	public void playButton()
+	{
+		if(EventSystem.current.currentSelectedGameObject.name != currentActive)
+		{
+			currentActive = EventSystem.current.currentSelectedGameObject.name;
+			buttonSFX.Play();
+		}
+	}
 }
