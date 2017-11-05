@@ -48,7 +48,7 @@ public class StallUpgradeManager : MonoBehaviour {
 	{
 		for (int i = 0; i < stallTier.Count; i++) 
 		{
-			if (stallTier [i] > PlayerPrefs.GetInt ("Stall_Tier")) {
+			if (i > PlayerPrefs.GetInt ("Stall_Tier")) {
 				foreach (GameObject trecipe in stallTier[i].Recipes) {
 					trecipe.SetActive (false);
 				}
