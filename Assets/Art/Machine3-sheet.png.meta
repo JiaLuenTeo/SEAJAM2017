@@ -1,12 +1,11 @@
 fileFormatVersion: 2
-guid: 006f98fa966d9e1419f4f102abf2038b
-timeCreated: 1509874878
+guid: 4f2c41c8ff266d146aca8ab706039ecf
+timeCreated: 1509878638
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Machine-sheet_0
-    21300002: Machine-sheet_1
-    21300004: Machine-sheet_2
+    21300000: Machine3-sheet_0
+    21300002: Machine3-sheet_1
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -94,13 +93,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Machine-sheet_0
+      name: Machine3-sheet_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 1
-        width: 28
-        height: 24
+        x: 4
+        y: 0
+        width: 112
+        height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -108,27 +107,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Machine-sheet_1
+      name: Machine3-sheet_1
       rect:
         serializedVersion: 2
-        x: 34
-        y: 1
-        width: 28
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Machine-sheet_2
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 1
-        width: 28
-        height: 24
+        x: 244
+        y: 0
+        width: 112
+        height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

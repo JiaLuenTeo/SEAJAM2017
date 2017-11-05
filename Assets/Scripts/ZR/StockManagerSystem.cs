@@ -17,6 +17,8 @@ public class StockManagerSystem : MonoBehaviour {
 	public Image stockAmount;
 	public Text curAmount;
 
+	public Animator Gold;
+
 	public int CurrentAmount = 0; // use addition instead of assign
 
 	public bool StartCountDown = false;
@@ -31,6 +33,7 @@ public class StockManagerSystem : MonoBehaviour {
 			if (currentTimer >= mLiquidityTimer)
 			{
 				PlayerPrefs.SetInt ("Cash", CurrentCash + ValueEarned_OverTime);
+				Gold.SetTrigger ("GainGold");
 				CurrentAmount -= 1;
 				PlayerPrefs.SetInt (gameObject.name+"_ProdAmount", CurrentAmount);
 				currentTimer = 0f;
@@ -70,9 +73,13 @@ public class StockManagerSystem : MonoBehaviour {
 		}
 	}
 
+	void OnEnable()
+	{
+		Gold = GameObject.FindGameObjectWithTag ("Gold").GetComponent<Animator> ();
+	}
 	// Use this for initialization
 	void Start () {
-		
+		Gold = GameObject.FindGameObjectWithTag ("Gold").GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame

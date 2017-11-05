@@ -7,6 +7,7 @@ using System;
 [Serializable]
 public class StallTier{
 
+	public Sprite TierPic;
 	public List<GameObject> Recipes; // recipes that can be acquired in the tier
 
 }
@@ -18,6 +19,7 @@ public class StallUpgradeManager : MonoBehaviour {
 
 	public List<StallTier> stallTier;
 	Text buttonTxt;
+	public Image StallPic;
 	//button func
 	public void UpgradeStall(int cost)
 	{
@@ -87,6 +89,7 @@ public class StallUpgradeManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		StallPic.sprite = stallTier [PlayerPrefs.GetInt ("Stall_Tier")].TierPic;
 		ChangeText();
 	}
 }

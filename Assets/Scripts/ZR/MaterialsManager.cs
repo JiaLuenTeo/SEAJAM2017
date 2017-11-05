@@ -10,6 +10,7 @@ public class MaterialsManager : MonoBehaviour
 
 	public string m_Material_Name;
 	public int MaterialPrice = 1;
+	[HideInInspector]
 	public float MaterialAmount;
 	public int AmountBundle = 1; // how many is acquired per purchase
 	public float maxBarAmount = 20;

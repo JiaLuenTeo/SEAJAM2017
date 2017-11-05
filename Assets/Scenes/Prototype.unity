@@ -441,7 +441,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1466651395}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1913,7 +1913,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.7044444, y: 0.037}
   m_AnchorMax: {x: 1, y: 0.9338598}
-  m_AnchoredPosition: {x: -16, y: -45.99998}
+  m_AnchoredPosition: {x: -16, y: -45.999977}
   m_SizeDelta: {x: 0, y: 3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &355336277
@@ -2130,8 +2130,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300004, guid: d8326bf7d69f4d64cbb845a54f5db94e, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2155,7 +2155,7 @@ GameObject:
   - component: {fileID: 400543259}
   - component: {fileID: 400543258}
   m_Layer: 5
-  m_Name: Background
+  m_Name: Background_Stall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2176,8 +2176,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 172.50002}
+  m_SizeDelta: {x: 0, y: -345}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &400543258
 MonoBehaviour:
@@ -2191,14 +2191,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23615918, g: 0.5860756, b: 0.61764705, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: ce5c438e029768e4e8c3d7e307987210, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2925,7 +2925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.21379304, a: 1}
+  m_Color: {r: 0.42647058, g: 1, b: 0.54908717, a: 0.553}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2985,10 +2985,10 @@ RectTransform:
   m_Father: {fileID: 1185898508}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 221.50009, y: -100}
+  m_SizeDelta: {x: 430, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &477220751
 MonoBehaviour:
@@ -3012,8 +3012,8 @@ MonoBehaviour:
   craftText: {fileID: 1971889479}
   ProductName: Just Soup
   ProductValue: 15
-  ProductLiquidity: 4.2
-  CraftedAmount: 14
+  ProductLiquidity: 2.8
+  CraftedAmount: 5
   Disabled: {fileID: 21300012, guid: d8326bf7d69f4d64cbb845a54f5db94e, type: 3}
   Enabled: {fileID: 21300010, guid: d8326bf7d69f4d64cbb845a54f5db94e, type: 3}
   CraftButton: {fileID: 2005671172}
@@ -3157,9 +3157,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -17, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &521847713
 MonoBehaviour:
@@ -3326,8 +3326,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360d4fef06293494990a183cbd8a0e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material_Name: Meat
-  MaterialPrice: 7
+  m_Material_Name: Egg
+  MaterialPrice: 3
   MaterialAmount: 0
   AmountBundle: 1
   maxBarAmount: 20
@@ -3528,10 +3528,10 @@ RectTransform:
   m_Father: {fileID: 1185898508}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 221.50009, y: -415}
+  m_SizeDelta: {x: 430, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &568764532
 MonoBehaviour:
@@ -3545,18 +3545,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaterialList:
-  - Name: Meat
-    AmountRequired: 1
-  - Name: Olive Oil
-    AmountRequired: 3
+  - Name: Egg
+    AmountRequired: 2
+  - Name: Mushroom
+    AmountRequired: 2
   stockManagerSystemOBJ: {fileID: 1682248774859026, guid: cad64c8a5e293ec42a13769082de505b,
     type: 2}
   BarMeter: {fileID: 1749675146}
   craftText: {fileID: 310358266}
-  ProductName: Just Soup
-  ProductValue: 15
-  ProductLiquidity: 4.2
-  CraftedAmount: 14
+  ProductName: American Breakfast
+  ProductValue: 14
+  ProductLiquidity: 2.6
+  CraftedAmount: 7
   Disabled: {fileID: 21300012, guid: d8326bf7d69f4d64cbb845a54f5db94e, type: 3}
   Enabled: {fileID: 21300010, guid: d8326bf7d69f4d64cbb845a54f5db94e, type: 3}
   CraftButton: {fileID: 533347692}
@@ -3998,10 +3998,10 @@ RectTransform:
   m_Father: {fileID: 1185898508}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 221.50009, y: -520}
+  m_SizeDelta: {x: 430, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &723603686
 MonoBehaviour:
@@ -4015,18 +4015,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaterialList:
-  - Name: Meat
+  - Name: Egg
+    AmountRequired: 2
+  - Name: Mushroom
     AmountRequired: 1
-  - Name: Olive Oil
-    AmountRequired: 3
+  - Name: Lettuce
+    AmountRequired: 4
   stockManagerSystemOBJ: {fileID: 1682248774859026, guid: cad64c8a5e293ec42a13769082de505b,
     type: 2}
   BarMeter: {fileID: 1005162424}
   craftText: {fileID: 1989844230}
-  ProductName: Just Soup
+  ProductName: Taco Belly
   ProductValue: 15
-  ProductLiquidity: 4.2
-  CraftedAmount: 14
+  ProductLiquidity: 5.5
+  CraftedAmount: 9
   Disabled: {fileID: 21300012, guid: d8326bf7d69f4d64cbb845a54f5db94e, type: 3}
   Enabled: {fileID: 21300010, guid: d8326bf7d69f4d64cbb845a54f5db94e, type: 3}
   CraftButton: {fileID: 418604338}
@@ -4189,8 +4191,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360d4fef06293494990a183cbd8a0e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material_Name: Meat
-  MaterialPrice: 7
+  m_Material_Name: Spices
+  MaterialPrice: 1
   MaterialAmount: 0
   AmountBundle: 1
   maxBarAmount: 20
@@ -8035,8 +8037,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360d4fef06293494990a183cbd8a0e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material_Name: Meat
-  MaterialPrice: 7
+  m_Material_Name: Lettuce
+  MaterialPrice: 2
   MaterialAmount: 0
   AmountBundle: 1
   maxBarAmount: 20
@@ -8189,10 +8191,10 @@ RectTransform:
   m_Father: {fileID: 1185898508}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 221.50009, y: -625}
+  m_SizeDelta: {x: 430, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &825037755
 MonoBehaviour:
@@ -8207,17 +8209,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MaterialList:
   - Name: Meat
-    AmountRequired: 1
-  - Name: Olive Oil
+    AmountRequired: 2
+  - Name: Egg
+    AmountRequired: 3
+  - Name: Lettuce
     AmountRequired: 3
   stockManagerSystemOBJ: {fileID: 1682248774859026, guid: cad64c8a5e293ec42a13769082de505b,
     type: 2}
   BarMeter: {fileID: 1690685172}
   craftText: {fileID: 772344435}
-  ProductName: Just Soup
-  ProductValue: 15
-  ProductLiquidity: 4.2
-  CraftedAmount: 14
+  ProductName: Sushi Maki
+  ProductValue: 30
+  ProductLiquidity: 9
+  CraftedAmount: 3
   Disabled: {fileID: 21300012, guid: d8326bf7d69f4d64cbb845a54f5db94e, type: 3}
   Enabled: {fileID: 21300010, guid: d8326bf7d69f4d64cbb845a54f5db94e, type: 3}
   CraftButton: {fileID: 1450876353}
@@ -8471,8 +8475,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360d4fef06293494990a183cbd8a0e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material_Name: Meat
-  MaterialPrice: 7
+  m_Material_Name: Mushroom
+  MaterialPrice: 3
   MaterialAmount: 0
   AmountBundle: 1
   maxBarAmount: 20
@@ -8566,7 +8570,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1bb9c5562ba96d04ca0663f02605269b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fdb9b371c1d10d942951f0919c2a6639, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8610,8 +8614,8 @@ RectTransform:
   m_Father: {fileID: 1138535218}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.46750432}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8750,7 +8754,7 @@ RectTransform:
   m_LocalScale: {x: 0.10000001, y: 0.10000001, z: 1}
   m_Children: []
   m_Father: {fileID: 2053232676}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.015555556, y: 0.9468091}
   m_AnchorMax: {x: 0.38888887, y: 0.983191}
@@ -8769,7 +8773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.85573024, g: 0.99264705, b: 0, a: 1}
+  m_Color: {r: 0.18490481, g: 0.83823526, b: 0.21644495, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8778,11 +8782,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: b37419f626a69df44af77a1a5b6205ba, type: 3}
-    m_FontSize: 180
-    m_FontStyle: 0
+    m_FontSize: 200
+    m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 180
+    m_MaxSize: 200
     m_Alignment: 3
     m_AlignByGeometry: 1
     m_RichText: 1
@@ -9129,7 +9133,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.35333347, y: 0.037}
   m_AnchorMax: {x: 0.65111095, y: 1}
-  m_AnchoredPosition: {x: -0.5, y: -47.00002}
+  m_AnchoredPosition: {x: -0.5, y: -47.000015}
   m_SizeDelta: {x: -1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &939530483
@@ -9823,14 +9827,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9852941, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300016, guid: d8326bf7d69f4d64cbb845a54f5db94e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9942,7 +9946,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0000150468595, y: -0.24998474}
+  m_AnchoredPosition: {x: -0.000015046859, y: -0.24998474}
   m_SizeDelta: {x: 0, y: 0.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1096626067
@@ -10073,7 +10077,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee268146113e5a74bbe0303c403d3604, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7328d575cf4c4d245b9b80220f77abbc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10105,7 +10109,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1136135603
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10171,15 +10175,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stallTier:
-  - Recipes:
+  - TierPic: {fileID: 21300000, guid: 8dcafced6a9a10f4e82c351f5dd2e679, type: 3}
+    Recipes:
     - {fileID: 477220749}
     - {fileID: 1258940343}
-  - Recipes:
+  - TierPic: {fileID: 21300000, guid: bbe59bd8908c5df4097c0162b65433a8, type: 3}
+    Recipes:
     - {fileID: 2118258540}
     - {fileID: 568764530}
     - {fileID: 723603684}
-  - Recipes:
+  - TierPic: {fileID: 21300000, guid: ce5c438e029768e4e8c3d7e307987210, type: 3}
+    Recipes:
     - {fileID: 825037753}
+  StallPic: {fileID: 400543258}
 --- !u!114 &1136135607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10199,6 +10207,8 @@ MonoBehaviour:
     - Meat
     - Olive Oil
     - Spices
+    MachineFrameClose: {fileID: 21300000, guid: 7da096703fc244840b299d99e15bc937,
+      type: 3}
   - MaxCounter: 15
     MaxResourceReward: 2
     TimeRequiredToCharge_Auto: 2
@@ -10206,6 +10216,8 @@ MonoBehaviour:
     - Meat
     - Olive Oil
     - Spices
+    MachineFrameClose: {fileID: 21300000, guid: 20049dd1378c77b498e8276437bab905,
+      type: 3}
   - MaxCounter: 15
     MaxResourceReward: 3
     TimeRequiredToCharge_Auto: 2
@@ -10213,7 +10225,10 @@ MonoBehaviour:
     - Meat
     - Olive Oil
     - Spices
+    MachineFrameClose: {fileID: 21300000, guid: 4f2c41c8ff266d146aca8ab706039ecf,
+      type: 3}
   barProgress: {fileID: 473288099}
+  MachineSprite: {fileID: 0}
 --- !u!1 &1138535217
 GameObject:
   m_ObjectHideFlags: 0
@@ -10287,7 +10302,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 675}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1185898509
 MonoBehaviour:
@@ -10377,8 +10392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360d4fef06293494990a183cbd8a0e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material_Name: Meat
-  MaterialPrice: 7
+  m_Material_Name: Olive Oil
+  MaterialPrice: 2
   MaterialAmount: 0
   AmountBundle: 1
   maxBarAmount: 20
@@ -10457,10 +10472,10 @@ RectTransform:
   m_Father: {fileID: 1185898508}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 221.50009, y: -205}
+  m_SizeDelta: {x: 430, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1258940345
 MonoBehaviour:
@@ -10475,17 +10490,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MaterialList:
   - Name: Meat
-    AmountRequired: 1
-  - Name: Olive Oil
-    AmountRequired: 3
+    AmountRequired: 2
+  - Name: Spices
+    AmountRequired: 4
   stockManagerSystemOBJ: {fileID: 1682248774859026, guid: cad64c8a5e293ec42a13769082de505b,
     type: 2}
   BarMeter: {fileID: 737927847}
   craftText: {fileID: 237107402}
-  ProductName: Just Soup
-  ProductValue: 15
-  ProductLiquidity: 4.2
-  CraftedAmount: 14
+  ProductName: Breast of Fire
+  ProductValue: 20
+  ProductLiquidity: 5
+  CraftedAmount: 6
   Disabled: {fileID: 21300012, guid: d8326bf7d69f4d64cbb845a54f5db94e, type: 3}
   Enabled: {fileID: 21300010, guid: d8326bf7d69f4d64cbb845a54f5db94e, type: 3}
   CraftButton: {fileID: 971230275}
@@ -10732,6 +10747,74 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1340680623}
+--- !u!1 &1353924913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1353924914}
+  - component: {fileID: 1353924916}
+  - component: {fileID: 1353924915}
+  m_Layer: 5
+  m_Name: panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1353924914
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353924913}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000801, y: 1.0000801, z: 1.0000801}
+  m_Children: []
+  m_Father: {fileID: 2053232676}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.00001513958, y: 0.000091552734}
+  m_SizeDelta: {x: 293.48, y: 57}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1353924915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353924913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.11726523, g: 0.115916945, b: 0.11764705, a: 0.472}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1353924916
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353924913}
 --- !u!1 &1380657335
 GameObject:
   m_ObjectHideFlags: 0
@@ -11130,7 +11213,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.037}
   m_AnchorMax: {x: 0.29555526, y: 0.9338598}
-  m_AnchoredPosition: {x: 16, y: -45.99998}
+  m_AnchoredPosition: {x: 16, y: -45.999977}
   m_SizeDelta: {x: -0.000015259, y: 3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1447834495
@@ -11449,6 +11532,7 @@ RectTransform:
   - {fileID: 834274803}
   - {fileID: 2076661164}
   - {fileID: 2053232676}
+  - {fileID: 2114314747}
   - {fileID: 59340085}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -11732,9 +11816,9 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 20}
+  m_SizeDelta: {x: -17, y: 20}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1559744096
 MonoBehaviour:
@@ -11914,7 +11998,7 @@ RectTransform:
   m_GameObject: {fileID: 1603749265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.6, z: 1}
+  m_LocalScale: {x: 1, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 727802146}
   m_RootOrder: 1
@@ -11943,7 +12027,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 5ba7d574e3fb7fd4f961c0556fadeb3e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ee268146113e5a74bbe0303c403d3604, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12106,6 +12190,135 @@ RectTransform:
   m_AnchoredPosition: {x: -0.000015258789, y: -0.24998474}
   m_SizeDelta: {x: 0, y: 0.5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1669515757
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1466651395}
+    m_Modifications:
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -75
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 325
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224426392802933146, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224426392802933146, guid: ad1740ca15981384eb9ab828bc23ec84,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601382788947198, guid: ad1740ca15981384eb9ab828bc23ec84, type: 2}
+      propertyPath: m_TagString
+      value: Gold
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ad1740ca15981384eb9ab828bc23ec84, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1669903747
 GameObject:
   m_ObjectHideFlags: 0
@@ -12453,15 +12666,14 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2083825480}
+  m_Children: []
   m_Father: {fileID: 228350535}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -9.1, y: 7.3}
+  m_SizeDelta: {x: 258.9, y: 176.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1685973834
 MonoBehaviour:
@@ -12480,7 +12692,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -12489,8 +12701,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300002, guid: 7da096703fc244840b299d99e15bc937,
+      type: 3}
+    m_PressedSprite: {fileID: 21300004, guid: 7da096703fc244840b299d99e15bc937, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -12534,8 +12747,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 7da096703fc244840b299d99e15bc937, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -14123,7 +14336,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: fdb9b371c1d10d942951f0919c2a6639, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1bb9c5562ba96d04ca0663f02605269b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14306,6 +14519,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1353924914}
   - {fileID: 861112685}
   m_Father: {fileID: 1466651395}
   m_RootOrder: 5
@@ -14447,7 +14661,7 @@ RectTransform:
   m_GameObject: {fileID: 2057972666}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 1240620405}
   m_RootOrder: 1
@@ -14476,7 +14690,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 7328d575cf4c4d245b9b80220f77abbc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5ba7d574e3fb7fd4f961c0556fadeb3e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14900,80 +15114,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2080053339}
---- !u!1 &2083825479
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2083825480}
-  - component: {fileID: 2083825482}
-  - component: {fileID: 2083825481}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2083825480
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2083825479}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1685973833}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2083825481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2083825479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Button
---- !u!222 &2083825482
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2083825479}
 --- !u!1 &2092447669
 GameObject:
   m_ObjectHideFlags: 0
@@ -15187,7 +15327,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2113764125
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15273,6 +15413,11 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!224 &2114314747 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224389182971172034, guid: ad1740ca15981384eb9ab828bc23ec84,
+    type: 2}
+  m_PrefabInternal: {fileID: 1669515757}
 --- !u!1 &2116554657
 GameObject:
   m_ObjectHideFlags: 0
@@ -15434,10 +15579,10 @@ RectTransform:
   m_Father: {fileID: 1185898508}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 221.50009, y: -310}
+  m_SizeDelta: {x: 430, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2118258542
 MonoBehaviour:
@@ -15452,17 +15597,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MaterialList:
   - Name: Meat
-    AmountRequired: 1
-  - Name: Olive Oil
     AmountRequired: 3
+  - Name: Olive Oil
+    AmountRequired: 4
+  - Name: Spices
+    AmountRequired: 6
   stockManagerSystemOBJ: {fileID: 1682248774859026, guid: cad64c8a5e293ec42a13769082de505b,
     type: 2}
   BarMeter: {fileID: 730489827}
   craftText: {fileID: 654171624}
-  ProductName: Just Soup
-  ProductValue: 15
-  ProductLiquidity: 4.2
-  CraftedAmount: 14
+  ProductName: Hazzelnut Curry
+  ProductValue: 27
+  ProductLiquidity: 8
+  CraftedAmount: 8
   Disabled: {fileID: 21300012, guid: d8326bf7d69f4d64cbb845a54f5db94e, type: 3}
   Enabled: {fileID: 21300010, guid: d8326bf7d69f4d64cbb845a54f5db94e, type: 3}
   CraftButton: {fileID: 462800748}

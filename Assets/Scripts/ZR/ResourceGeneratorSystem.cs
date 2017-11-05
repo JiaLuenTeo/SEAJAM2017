@@ -12,6 +12,8 @@ public class MachineTier{
 	public float TimeRequiredToCharge_Auto = 6f;
 	public List<string> ResourceNames; // resources that can be acquired in the tier
 	//TODO: ADD SPRITE IMAGE CHANGE
+	public Sprite MachineFrameClose;
+	//public Sprite MachineFrameOpen;
 }
 
 
@@ -20,7 +22,7 @@ public class ResourceGeneratorSystem : MonoBehaviour {
 
 	public List<MachineTier> mMachineTier;
 	public Image barProgress;
-
+	public Image MachineSprite;
 	private float CurrTime = 0f;
 	private float currCounter = 0; // no. of counters to spawn resource.
 
@@ -120,6 +122,10 @@ public class ResourceGeneratorSystem : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+
+		MachineSprite.sprite = mMachineTier [PlayerPrefs.GetInt ("Machine_Tier")].MachineFrameClose;
+
+
 		ChangeText();
 		UpdateBar();
 		CurrTime += Time.deltaTime;

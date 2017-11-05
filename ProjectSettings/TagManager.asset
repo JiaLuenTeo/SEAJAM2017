@@ -6,6 +6,7 @@ TagManager:
   tags:
   - GameManager
   - PrefabManager
+  - Gold
   layers:
   - Default
   - TransparentFX
