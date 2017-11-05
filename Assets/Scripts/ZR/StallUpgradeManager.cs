@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 using System;
 
 [Serializable]
@@ -17,6 +17,7 @@ public class StallTier{
 public class StallUpgradeManager : MonoBehaviour {
 
 	public List<StallTier> stallTier;
+	Text buttonTxt;
 	//button func
 	public void UpgradeStall(int cost)
 	{
@@ -62,14 +63,30 @@ public class StallUpgradeManager : MonoBehaviour {
 		}
 	}
 
+	void ChangeText()
+	{
+		if (PlayerPrefs.GetInt("Stall_Tier") < stallTier.Count )
+		{
+			buttonTxt.text = "Upgrade Stall" + "\n" + "Tier Level : " + PlayerPrefs.GetInt("Stall_Tier");
+		}
+		else if (PlayerPrefs.GetInt("Stall_Tier") == stallTier.Count)
+		{
+			
+			buttonTxt.text = "Upgrade Stall" + "\n" + "Tier Level : " + "MAX";
+		}
+
+	}
+
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
+		buttonTxt = gameObject.transform.Find("UpgradeStall").Find("Text").GetComponent<Text>();
 		TierCheck ();
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		
+		ChangeText();
 	}
 }

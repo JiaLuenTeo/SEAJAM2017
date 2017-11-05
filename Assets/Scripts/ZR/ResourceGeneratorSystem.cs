@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 
 [Serializable]
@@ -22,6 +23,8 @@ public class ResourceGeneratorSystem : MonoBehaviour {
 
 	private float CurrTime = 0f;
 	private int currCounter = 0; // no. of counters to spawn resource.
+
+	Text buttonTxt;
 
 	//button func
 	public void HastenSpeed()
@@ -79,15 +82,31 @@ public class ResourceGeneratorSystem : MonoBehaviour {
 	{
 		currCounter = mMachineTier[PlayerPrefs.GetInt ("Machine_Tier") ].MaxCounter;
 	}
+
+	void ChangeText()
+	{
+		if (PlayerPrefs.GetInt("Machine_Tier") < mMachineTier.Count - 1)
+		{
+			buttonTxt.text = "Machine Stall" + "\n" + "Tier Level : " + PlayerPrefs.GetInt("Machine_Tier");
+		}
+		else if (PlayerPrefs.GetInt("Machine_Tier") == mMachineTier.Count - 1)
+		{
+
+			buttonTxt.text = "Machine Stall" + "\n" + "Tier Level : " + "MAX";
+		}
+	}
 	// Use this for initialization
 	void Start () 
 	{
+		Debug.Log (PlayerPrefs.GetInt("Machine_Tier") + "=" +  mMachineTier.Count);
+		buttonTxt = gameObject.transform.Find("UpgradeMachine").Find("Text").GetComponent<Text>();
 		currCounter = mMachineTier[PlayerPrefs.GetInt ("Machine_Tier") ].MaxCounter;
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
+		ChangeText();
 		CurrTime += Time.deltaTime;
 		if (CurrTime >= mMachineTier[PlayerPrefs.GetInt ("Machine_Tier") ].TimeRequiredToCharge_Auto)
 		{
