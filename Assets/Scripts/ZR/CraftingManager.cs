@@ -33,8 +33,9 @@ public class CraftingManager : MonoBehaviour
 		foreach (CraftingMaterial_Properties materials in m_MaterialList) 
 		{
 			
-			if (PlayerPrefs.GetInt (materials.Name + "_CM") > 0) 
+			if (PlayerPrefs.GetInt (materials.Name + "_CM") > materials.AmountRequired) 
 			{
+				
 				counter += 1;
 			}
 		}
@@ -42,6 +43,12 @@ public class CraftingManager : MonoBehaviour
 		if(counter == m_MaterialList.Count)
 		{
 			Debug.Log ("ALLOW CRAFTING " + ProductName);
+			foreach (CraftingMaterial_Properties materials in m_MaterialList) 
+			{
+
+				PlayerPrefs.SetInt (materials.Name + "_CM", PlayerPrefs.GetInt (materials.Name + "_CM") - materials.AmountRequired);
+	
+			}
 			return true;
 		}
 		else
@@ -115,7 +122,7 @@ public class CraftingManager : MonoBehaviour
 		foreach (CraftingMaterial_Properties materials in m_MaterialList) 
 		{
 
-			if (PlayerPrefs.GetInt (materials.Name + "_CM") <= 0) {
+			if (PlayerPrefs.GetInt (materials.Name + "_CM") <= materials.AmountRequired) {
 				CraftButton.transform.GetChild (0).GetComponent<Text> ().text = "LOCKED!";
 				CraftButton.GetComponent<Image> ().sprite = Disabled;
 			} 

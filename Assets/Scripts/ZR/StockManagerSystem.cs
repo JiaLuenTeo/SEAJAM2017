@@ -63,11 +63,12 @@ public class StockManagerSystem : MonoBehaviour {
 
 	void updateText()
 	{
-		if(CurrentAmount == 0)
-		{
-			curAmount.text = "BUY";
-		}
-		else if (CurrentAmount > 0)
+//		if(CurrentAmount == 0)
+//		{
+//			curAmount.text = "BUY";
+//		}
+	
+		if (CurrentAmount > 0)
 		{
 			curAmount.text = CurrentAmount.ToString();
 		}
