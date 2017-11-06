@@ -69,12 +69,12 @@ public class StallUpgradeManager : MonoBehaviour {
 	{
 		if (PlayerPrefs.GetInt("Stall_Tier") < stallTier.Count-1 )
 		{
-			buttonTxt.text = "Upgrade Stall" + "\n" + "Tier Level : " + PlayerPrefs.GetInt("Stall_Tier");
+			buttonTxt.text = "Upgrade Stall" + "\n" + "Cost: RM1000" + "\n" + "Tier Level : " + PlayerPrefs.GetInt("Stall_Tier");
 		}
 		else if (PlayerPrefs.GetInt("Stall_Tier") == stallTier.Count-1)
 		{
 			
-			buttonTxt.text = "Upgrade Stall" + "\n" + "Tier Level : " + "MAX";
+			buttonTxt.text = "Upgrade Stall" + "\n"  + "Tier Level : " + "MAX";
 		}
 
 	}

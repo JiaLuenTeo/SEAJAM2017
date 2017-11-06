@@ -14,6 +14,11 @@ public class SwitchTabScript : MonoBehaviour {
 	{
 		recipeSet();
 	}
+
+	void LateStart () 
+	{
+		recipeSet();
+	}
 	
 	// Update is called once per frame
 	void Update () 

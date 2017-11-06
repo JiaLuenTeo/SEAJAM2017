@@ -8518,7 +8518,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1000
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10380,25 +10380,25 @@ MonoBehaviour:
   mMachineTier:
   - MaxCounter: 15
     MaxResourceReward: 2
-    TimeRequiredToCharge_Auto: 2
+    TimeRequiredToCharge_Auto: 0
     ResourceNames:
     - Meat
     - Olive Oil
     - Spices
     MachineFrameClose: {fileID: 21300000, guid: 7da096703fc244840b299d99e15bc937,
       type: 3}
-  - MaxCounter: 15
-    MaxResourceReward: 2
-    TimeRequiredToCharge_Auto: 2
+  - MaxCounter: 10
+    MaxResourceReward: 4
+    TimeRequiredToCharge_Auto: 0
     ResourceNames:
     - Meat
     - Olive Oil
     - Spices
     MachineFrameClose: {fileID: 21300000, guid: 20049dd1378c77b498e8276437bab905,
       type: 3}
-  - MaxCounter: 15
-    MaxResourceReward: 3
-    TimeRequiredToCharge_Auto: 2
+  - MaxCounter: 5
+    MaxResourceReward: 8
+    TimeRequiredToCharge_Auto: 0
     ResourceNames:
     - Meat
     - Olive Oil
