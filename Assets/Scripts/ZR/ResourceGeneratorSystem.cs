@@ -101,7 +101,6 @@ public class ResourceGeneratorSystem : MonoBehaviour {
 	void UpdateBar()
 	{
 		float tempFloat =  mMachineTier[PlayerPrefs.GetInt("Machine_Tier")].MaxCounter;
-		Debug.Log(1 - (currCounter / tempFloat));
 		if (1 - (currCounter / tempFloat) >= 1)
 		{
 			barProgress.rectTransform.localScale = new Vector3 (1,1,1);
